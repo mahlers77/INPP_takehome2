@@ -72,13 +72,26 @@ Use the results in question 1.3 and show that the oscillation amplitude $\sin^22
 This is the so-called Mikheyev-Smirnov-Wolfenstein (MSW) resonance.
 \vspace{1cm}
 
-{\large \textsc{Problem 2 - Helicity Flip} - 10 points}
+{\large \textsc{Problem 2 - Helicity and Chirality} - 10 points}
 
-A left-handed electron has a total energy $E$ in the laboratory system. Consider a Lorentz boost in the direction of the electron's momentum. The momentum of the electron in the new boosted reference system with observer velocity $v$ (measured in the original laboratory frame) is given in natural units as
-\begin{equation}
-p' = \gamma p - \gamma\beta E\,,
-\end{equation}  
-where $E$ is the electron's energy, $\beta = v/c$ and $\gamma = 1/\sqrt{1-\beta^2}$. Determine the critical velocity $v$ that is necessary to flip the helicity of the electron. If the electron had no mass, would it be possible to find an observer frame where the left-handed electron becomes a right-handed electron?
+A left-handed electron has a total energy $E$ and momentum ${\bf p}$ in the laboratory system. Its state $|u_\downarrow\rangle$ can be described as a superposition of left- and right-handed chirality states, $|u_\downarrow^\infty\rangle$ and $|u_\uparrow^\infty\rangle$, as 
+\begin{equation}\label{eq:ex2a}
+|u_\downarrow\rangle =\frac{1}{2}\sqrt{\frac{E+m}{E}}\left[ \left(1+\frac{|{\bf p}|}{E+m}\right)|u_\downarrow^\infty\rangle+\left(1-\frac{|{\bf p}|}{E+m}\right)|u_\uparrow^\infty\rangle\right]\,,
+\end{equation}
+where $m$ is the mass of the electron and we use natural units with $c=1$ and $\hbar=1$.
+
+2.1) We want to consider the relativistic limit $m\ll E$. Show, that to leading order in $m/E$ the left-handed helicity state is given
+\[
+|u_\downarrow\rangle \simeq |u_\downarrow^\infty\rangle +\frac{m}{2E}|u_\uparrow^\infty\rangle
+\]
+%{\bf Hint:} Taylor-expand with respect to $m/E$.
+
+2.2) Consider now the state in Eq.~(\ref{eq:ex2a}) in the rest-frame of the electron. What is the states composition in terms of left- and right-handed chirality states? What are the probabilities of finding the state in the left- or right-handed chirality state?
+%2.2) Consider a Lorentz boost in the direction of the electron's momentum. The momentum of the electron in the new boosted reference system with observer velocity $v$ (measured in the original laboratory frame) is given in natural units as
+%\begin{equation}
+%p' = \gamma p - \gamma\beta E\,,
+%\end{equation}  
+%where $E$ is the electron's energy, $\beta = v/c$ and $\gamma = 1/\sqrt{1-\beta^2}$. Determine the critical velocity $v$ that is necessary to flip the helicity of the electron. If the electron had no mass, would it be possible to find an observer frame where the left-handed electron becomes a right-handed electron? Explain.
 
 \vspace{1cm}
 
