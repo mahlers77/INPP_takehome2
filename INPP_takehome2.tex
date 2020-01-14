@@ -24,8 +24,52 @@
 Due: Monday $20^{th}$ January 2020 at 13:00}
 \end{center}
 
-{\large \textsc{Problem 1 - } - XY points}
+{\large \textsc{Problem 1 - Neutrino Oscillation in Matter} - XY points}
 
+In the lecture we studied neutrino oscillation in an (effective) two-flavour system. Two neutrino flavour states, $|\nu_e\rangle$ and $|\nu_\mu\rangle$, mix with two mass states, $|\nu_1\rangle$ and $|\nu_2\rangle$, such that
+\[
+\begin{pmatrix}|\nu_e\rangle\\|\nu_\mu\rangle\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}\cdot\begin{pmatrix}|\nu_1\rangle\\|\nu_2\rangle\end{pmatrix}
+\]
+For a fixed momentum $p$, the Schroedinger equations of the two mass states $|\nu_i(t)\rangle$ (with $i=1$ or $i=2$) can be written as the matrix equation
+\begin{equation}\label{eq:ex1a}
+i\frac{\partial}{\partial t}\begin{pmatrix}|\nu_1(t)\rangle\\|\nu_2(t)\rangle\end{pmatrix} \simeq \begin{pmatrix}p + {m_1^2}/(2p)&0\\0&p + {m_2^2}/(2p)\end{pmatrix}\cdot\begin{pmatrix}|\nu_1(t)\rangle\\|\nu_2(t)\rangle\end{pmatrix}\,,
+\end{equation}
+where we used the relativistic approximation $E=\sqrt{p^2+m_i^2} \simeq p+m_i^2/(2p)$ in the last step. We use natural units with $c=1$ and $\hbar=1$. Similarly, the Schroedinger equations of the two flavour states $|\nu_\alpha(t)\rangle$ (with $\alpha=e$ or $\alpha=\mu$) can be written as a matrix equation
+\begin{equation}\label{eq:ex1b}
+i\frac{\partial}{\partial t}\begin{pmatrix}|\nu_e(t)\rangle\\|\nu_\mu(t)\rangle\end{pmatrix} = \begin{pmatrix}H_{ee}&H_{e\mu}\\H_{\mu e}&H_{\mu\mu}\end{pmatrix}\cdot\begin{pmatrix}|\nu_e(t)\rangle\\|\nu_\mu(t)\rangle\end{pmatrix}\,.
+\end{equation}
+
+1.1) Show, that the Hamiltonian matrix of vacuum oscillations can be written as
+\begin{equation}\label{eq:ex1c}
+{\bf H}_{\rm vac} \equiv\begin{pmatrix}H_{ee}&H_{e\mu}\\H_{\mu e}&H_{\mu\mu}\end{pmatrix} = a\begin{pmatrix}-\cos2\theta&\sin2\theta\\\sin2\theta&\cos2\theta\end{pmatrix} + b\begin{pmatrix}1&0\\0&1\end{pmatrix}\,,
+\end{equation}
+and determine the energy- and mass-dependent coefficients $a$ and $b$.
+
+{\bf Hint:} Write the flavor states $|\nu_\alpha(t)\rangle$ as a superposition of mass states $|\nu_i(t)\rangle$ and use the evolution of Eq.~(\ref{eq:ex1a}) to derive the entries in Eq.~(\ref{eq:ex1b}).
+
+1.2) Neutrino oscillations in matter are modified due to different interactions of neutrino in matter. In particular, the interactions of electron neutrinos and electron anti-neutrinos with electrons in matter can happen via charged current exchange. Draw the individual tree-level Feynman diagrams for the processes $\nu_e+e^- \to \nu_e +e^-$ and $\overline{\nu}_e+e^- \to \overline{\nu}_e +e^-$, that are not possible for $\nu_\mu$ or $\nu_\tau$ interactions with electrons. 
+
+1.3) These matter effects introduce an additional potential term in the Hamiltonian:
+\begin{equation}\label{eq:ex1d}
+{\bf H}_{\rm mat} \equiv {\bf H}_{\rm vac} + \begin{pmatrix}V&0\\0&0\end{pmatrix}\,.
+\end{equation}
+Show that this sum can be re-written in the form similar to Eq.~(\ref{eq:ex1c})
+\begin{equation}\label{eq:ex1e}
+{\bf H}_{\rm mat} = \hat{a}\begin{pmatrix}-\cos2\hat\theta&\sin2\hat\theta\\\sin2\hat\theta&\cos2\hat\theta\end{pmatrix} + \hat{b}\begin{pmatrix}1&0\\0&1\end{pmatrix}\,,
+\end{equation}
+and give $\hat{a}$, $\hat{b}$ and $\sin2\hat{\theta}$ as a function of $a$, $b$, $\theta$ and $V_W$.
+
+{\bf Hint:} Use the Eqs.~(\ref{eq:ex1c}), (\ref{eq:ex1d}) and (\ref{eq:ex1e}).
+
+1.4) The neutrino flavour oscillation probability in matter looks very similar to that in vacuum. The oscillation amplitude is proportional to the new effective mixing angle as:
+\begin{equation}
+P_{\nu_\mu\to\nu_e} = \sin^22\hat{\theta}\sin^2\left(\frac{\hat{a}}{a}\frac{\Delta m^2\ell}{4p}\right)\,.
+\end{equation}
+Use the results in question 1.3 and show that the oscillation amplitude $\sin^22\hat{\theta}$ becomes maximal at an energy corresponding to 
+\begin{equation}
+2a\cos2\theta = V\,.
+\end{equation} 
+This is the so-called Mikheyev-Smirnov-Wolfenstein (MSW) resonance.
 \vspace{1cm}
 
 {\large \textsc{Problem 2 - } - XY points}
